@@ -3,6 +3,16 @@
 > TuFood es una aplicación web desarrollada con **React** que permite **explorar recetas**, **buscar por nombre**, **filtrar por país** y **guardar recetas favoritas**, utilizando la API pública **TheMealDB**.
 > El objetivo del proyecto es demostrar el uso práctico de los principales conceptos aprendidos en React: componentes, estado, efectos, routing, contexto y custom hooks.
 
+## Clona el repositorio
+
+```bash
+git clone https://github.com/DiegoAntunezPerez/TuFood.git
+```
+
+```bash
+Netlify web https://tufood.netlify.app/
+```
+
 ---
 
 ## Funcionalidades principales
