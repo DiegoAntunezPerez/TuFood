@@ -16,7 +16,7 @@ const Header = ({setSearchQuery}) => {
     return (
     <header className='header'>
       <div className='header-left'>
-        <img src={logo} alt="logo" className='logo'/>
+        <Link to="/"><img src={logo} alt="logo" className='logo'/></Link>
         <Link to="/" className='tittle'>
           <h1>TuFood</h1>
         </Link>        
