@@ -1,0 +1,47 @@
+.recipe-card {
+  cursor: pointer;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease; /* le doy animacion a la card con esta transi y el hover de abajo para no ser plana la web con ease y un pequeño zoom scale 1.03*/
+  margin-bottom: 50px;
+}
+
+.recipe-card:hover {
+  transform: scale(1.03);
+}
+
+.recipe-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+.recipe-desc {
+  font-size: 0.85rem;
+  color: #555;
+  overflow: hidden;
+  line-height: 1.4;
+}
+
+.recipe-card button {
+  padding: 0.5rem 1rem;
+  background-color: rgba(255, 200, 163, 0.575);
+  border: 1.5px solid #00000000;
+  border-radius: 20px;
+  color: var(--color-text2);
+}
+.recipe-card > h3,
+p,
+button {
+  display: flex;
+  margin: 10px;
+}
+
+.h3 {
+  font-size: var(--font-size-tittle);
+}
+
+@media (max-width: 100%) {
+  .recipe-card {
+    max-width: 100%;
+  }
+}

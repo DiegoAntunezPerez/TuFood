@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Signika:wght@300..700&display=swap');
+:root {
+  /* SPACING */
+  --space-xs: 4px;
+  --space-s: 8px;
+  --space-m: 16px;
+  --space-l: 24px;
+  --space-xl: 32px;
+  /* FONTS */
+  --font-tittle: 'Montserrat', sans-serif;
+  --font-subtittle: 'Signika', sans-serif;
+  --font-p: 'Hind Madurai', sans-serif;
+  --font-size-p: 0.875rem; /* 14px */
+  --font-size-sub: 1rem; /* 16px */
+  --font-size-tittle: 1.5rem; /* 20px */
+  --font-size-xl: 2rem; /* 24px */
+  /* BORDER RADIUS */
+  --radius-s: 4px;
+  --radius-m: 8px;
+  --radius-l: 16px;
+  /* COLOR */
+  --color-text: #fff7e2;
+  --color-text2: #1b1b1b;
+  --color-footer: #6969699f;
+  --color-body: #ee974b5d;
+  --color-button: #e56353;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: var(--font-tittle);
+  font-size: var(--font-size-xl);
+  font-weight: 800;
+  color: var(--color-text);
+  height: 40px;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+h2 {
+  font-family: var(--font-p);
+  font-size: var(--font-size-xl);
+  height: 60px;
+  margin-bottom: 40px;
+  color: var(--color-button);
+}
+
+h3,
+h4 {
+  font-size: var(--font-size-tittle);
+  font-family: var(--font-tittle);
+  margin-left: 50px;
+  color: var(--color-text2);
+}
+p,
+label,
+input,
+button {
+  font-size: var(--font-size-p);
+  font-family: var(--font-p);
+}

@@ -1,0 +1,61 @@
+.recipe-detail {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--space-xl);
+}
+.pais {
+  height: 50px;
+}
+.photo,
+.parrafo {
+  display: flex;
+}
+.photo {
+  width: 400px;
+}
+.parrafo {
+  width: 400px;
+}
+.ytname {
+  display: none;
+}
+.pais {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin-bottom: 60px;
+}
+
+iframe {
+  width: 560px;
+  height: 380px;
+}
+
+@media (max-width: 768px) {
+  .recipe-detail {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  img {
+    display: flex;
+    justify-content: center;
+  }
+  .photo {
+    width: 40%;
+  }
+  .parrafo {
+    width: 90%;
+    flex: 1;
+    margin: 10px;
+  }
+}
