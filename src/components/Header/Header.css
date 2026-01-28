@@ -1,3 +1,124 @@
+/* Icono del botón flotante de favoritos */
+.floating-fav-icon {
+  font-size: 2rem;
+  color: #ff4d4f;
+  line-height: 1;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: var(--color-button);
+  color: var(--color-text);
+  padding: 0.5rem;
+  font-family: var(--font-subtittle);
+  font-size: var(--font-size-sub);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left,
+.header-center,
+.header-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-left,
+.header-center,
+.header-right > a {
+  margin: var(--space-m);
+}
+
+.header-left {
+  justify-content: flex-start;
+}
+.header-left a {
+  color: var(--color-text);
+  padding: var(--space-m);
+}
+
+.header-right {
+  justify-content: flex-end;
+}
+.header-right a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: var(--color-text);
+}
+.logo {
+  width: 40px;
+}
+
+/* Input de búsqueda principal, más ancho por defecto */
+.search-input {
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  background-color: rgba(255, 200, 163, 0.575);
+  border: 1.5px solid #0000005b;
+  width: 90%;
+  min-width: 220px;
+  max-width: 600px;
+  font-size: 1.1rem;
+  box-sizing: border-box;
+}
+
+@media (max-width: 766px) and (min-width: 501px) {
+  .search-input {
+    width: 98%;
+    min-width: 0;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .search-input {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    font-size: 1rem;
+    margin: 0;
+  }
+  .header-center {
+    padding: 0 0.2rem;
+  }
+}
+
+/* Botón flotante de favoritos. Por defecto, oculto el botón flotante en escritorio */
+.floating-fav-btn {
+  display: none;
+}
+@media (max-width: 768px) {
+  .floating-fav-btn {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+    padding: 0.7rem 0.9rem;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 0.2s;
+    border: none;
+    text-decoration: none;
+  }
+  .floating-fav-btn:hover {
+    box-shadow: 0 4px 16px rgba(255, 77, 79, 0.25);
+    background: #ffeaea;
+  }
+}
+/* Icono del botón flotante de favoritos */
+.floating-fav-icon {
+  font-size: 2rem;
+  color: #ff4d4f;
+  line-height: 1;
+}
 .header {
   width: 100%;
   height: 60px;
@@ -47,11 +168,78 @@
   width: 40px;
 }
 .search-input {
-  padding: 0.5rem;
+  padding: 0.5rem 1.2rem;
   border-radius: 20px;
   background-color: rgba(255, 200, 163, 0.575);
   border: 1.5px solid #0000005b;
-  width: 60%;
+  width: 70%;
+  min-width: 180px;
+  max-width: 500px;
+  font-size: 1.1rem;
+  box-sizing: border-box;
+}
+
+@media (max-width: 500px) {
+  .search-input {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    font-size: 1rem;
+    margin: 0;
+  }
+  .header-center {
+    padding: 0 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .floating-fav-btn {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+    padding: 0.7rem 0.9rem;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 0.2s;
+    border: none;
+    text-decoration: none;
+  }
+  .floating-fav-btn:hover {
+    box-shadow: 0 4px 16px rgba(255, 77, 79, 0.25);
+    background: #ffeaea;
+  }
+}
+/* Botón flotante de favoritos. Por defecto, oculto el botón flotante en escritorio */
+.floating-fav-btn {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .floating-fav-btn {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+    padding: 0.7rem 0.9rem;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 0.2s;
+    border: none;
+    text-decoration: none;
+  }
+  .floating-fav-btn:hover {
+    box-shadow: 0 4px 16px rgba(255, 77, 79, 0.25);
+    background: #ffeaea;
+  }
 }
 
 .search-button {
@@ -62,6 +250,14 @@
   border-radius: 20px;
   cursor: pointer;
   color: var(--color-text2);
+}
+
+@media (max-width: 766px) and (min-width: 501px) {
+  .search-input {
+    width: 90%;
+    min-width: 0;
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 768px) {

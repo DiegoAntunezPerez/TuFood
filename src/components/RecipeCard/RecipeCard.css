@@ -28,6 +28,7 @@
   border: 1.5px solid #00000000;
   border-radius: 20px;
   color: var(--color-text2);
+  cursor: pointer;
 }
 .recipe-card > h3,
 p,
